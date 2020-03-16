@@ -1,5 +1,5 @@
 function yd = diffcent(y,pas)
-%DIFFCENT	derivee numérique par difference centrale
+%DIFFCENT	derivee numï¿½rique par difference centrale
 %	DIFFCENT(Y, PAS), for a vector Y, is [Y(2)-Y(1) (Y(3)-Y(1))/2 ... Y(n)-Y(n-1)]/PAS.
 %
 %	See also DIFF, GRADIENT, DEL2, INT, SYMVAR.

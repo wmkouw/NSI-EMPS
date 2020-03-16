@@ -1,13 +1,12 @@
-# Small script to read MATLAB data into Julia
-using MAT
+# Small script to visualize loaded MATLAB data
+
 using Plots
 pyplot()
 
-# Open
-file = matopen("./data/DATA_EMPS.mat")
-vir = read(file, "vir")
-qm = read(file, "qm")
-close(file)
+include("reading_data.jl")
+
+# Load data using reading_data script
+vir, qm = load_EMPS_data()
 
 # Visualize data
 plot(vir, label="vir")
